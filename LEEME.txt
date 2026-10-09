@@ -1,0 +1,69 @@
+KIT PFE — BUSCADOR Y EXCEL MAESTRO
+
+1. EMPEZAR
+Extrae toda la carpeta del ZIP. Abre Buscador_PFE.html con Chrome o Edge.
+El buscador ya incluye las 387 participaciones del histórico, hasta agosto de 2026.
+No necesitas instalar programas, habilitar macros ni tener conexión a internet.
+
+2. CONSULTAR Y PREPARAR UN REPORTE
+Busca por DNI/documento o por nombre. Puedes filtrar por curso y resultado.
+Pulsa “Agregar al reporte” junto a cada participación que necesites.
+Cambiar la búsqueda conserva lo agregado. “Quitar” retira una fila.
+“Limpiar reporte” vacía la selección sin modificar la base de datos.
+“Copiar reporte” permite pegar la tabla en un correo o documento.
+“Descargar Excel” genera un .xlsx con los registros seleccionados.
+
+3. AGREGAR UNA NUEVA PROMOCIÓN
+Abre Excel_Maestro_PFE.xlsx. Trabaja en la hoja Participantes General.
+Agrega nuevas filas al final y conserva todas las promociones anteriores.
+No cambies los nombres de la hoja ni de los encabezados.
+
+Completa siempre estos siete campos:
+- CURSO: una fecha real de Excel dentro del mes del curso (por ejemplo, 01/11/2026).
+- PUESTO: el puesto académico obtenido, como número entero mayor que cero.
+- APELLIDOS Y NOMBRES.
+- DNI: documento como texto, conservando sus ceros iniciales o el prefijo CE.
+- PROPUESTA: el dato oficial correspondiente, por ejemplo DM o PEE.
+- NOTA FINAL: nota oficial numérica, entre 0 y 20.
+- RESULTADO: APROBADO o DESAPROBADO, según el resultado oficial.
+
+El maestro conserva los 21 campos académicos del histórico.
+Las notas se guardan como valores oficiales. No se recalculan automáticamente
+a partir de D1, D2, D3, D4 u otros componentes.
+El buscador no deduce la aprobación a partir de la nota.
+
+4. ACTUALIZAR EL BUSCADOR
+Guarda los cambios del Excel. En el buscador, pulsa “Actualizar base desde Excel”.
+Selecciona Excel_Maestro_PFE.xlsx y revisa el resumen de nuevos, modificados y ausentes.
+Pulsa “Aplicar actualización”. La búsqueda, los filtros y las descargas usarán la nueva base.
+
+Si falta información obligatoria o se repite documento + curso, verás las filas
+que debes corregir. La base anterior permanece intacta hasta una importación válida.
+Si aparecen registros ausentes, revisa si seleccionaste solo una promoción:
+debes cargar el maestro completo. La aplicación pide confirmar las ausencias
+antes de retirar registros de la base del buscador.
+
+5. CORREGIR UN PARTICIPANTE
+Corrige su fila en el maestro y vuelve a cargarlo.
+La clave es documento + mes/año del curso. Una persona que repite el programa
+en otra promoción conserva ambas filas. Si cambia el documento o el curso,
+la actualización mostrará un registro nuevo y otro ausente.
+Una corrección en la nota del mismo participante y curso actualiza su reporte.
+
+6. QUÉ SE ACTUALIZA Y QUÉ NO
+Guardar el Excel no actualiza por sí solo el HTML, aunque estén en la misma carpeta.
+Siempre debes seleccionar el maestro actualizado y aplicar la carga.
+El buscador no escribe cambios dentro del Excel maestro.
+La base cargada se conserva en ese navegador mientras su almacenamiento lo permita.
+En otra computadora, en modo privado o después de borrar los datos del navegador,
+vuelve a cargar el maestro actualizado. El archivo HTML mantiene su base inicial integrada.
+Para trasladar el sistema, copia la carpeta con el Excel maestro más reciente.
+
+7. ARCHIVOS
+Buscador_PFE.html: herramienta de búsqueda, actualización y reportes.
+Excel_Maestro_PFE.xlsx: única base que debes seguir alimentando.
+LEEME.txt: estas instrucciones.
+Respaldo/Historico_PFE_Anterior.xlsx: versión anterior completa, conservada como referencia.
+No alimentes el archivo de Respaldo ni las hojas antiguas de consulta.
+
+Antes de una actualización grande, guarda una copia fechada de tu Excel maestro.
